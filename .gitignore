@@ -1,0 +1,4 @@
+bin/
+generated/
+.DS_Store
+compilationLog
