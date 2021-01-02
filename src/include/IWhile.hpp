@@ -51,7 +51,7 @@ public:
 	}
 
 	//Método para geração do código
-	void generateCode(std::fstream& fileStream)  {
+	void generateCode(std::fstream& fileStream) {
 		//Variavel para armazenamento dos tokens que iremos gerar através da quebra
 		//da expressao do if pelos tokens '&&' e '||'
 		vector<string> tokens;

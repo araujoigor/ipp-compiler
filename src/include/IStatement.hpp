@@ -20,7 +20,7 @@ public:
 	/* A classe IStatement é filha da classe CodeGenerator e portanto possui o método (aqui abstrato)
 	 * generateCode
 	 */
-	virtual void generateCode(std::fstream& fileStream)  = 0;
+	virtual void generateCode(std::fstream& fileStream) = 0;
 
 	/* Construtor padrão com a linha de definição */
 	IStatement(int lineNumber){
