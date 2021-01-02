@@ -42,7 +42,6 @@
 	 * atual (definida no arquivo .l).
 	 */
 	extern "C" int yylex();
-	extern "C" int yyparse();
 	extern "C" FILE *yyin;
 	extern "C" int linenumber;
 	
@@ -419,7 +418,7 @@ int main(int argc, char **argv) {
 	 */
 	if(argc != 3){
 		std::cout << "Usage: i++ [source file] [output file]" << std::endl;
-		return EX_OK;
+		return EX_USAGE;
 	}
 	
 	/* Cria-se o descritor de arquivo do arquivo de entrada */
@@ -482,7 +481,7 @@ int main(int argc, char **argv) {
 	//Deleta-se o arquivo intermediário de compilação
 	remove(tempCppCode.c_str());
 
-	if(!compilationSuccess) exit(EX_USAGE);
+	if(!compilationSuccess) return EX_USAGE;
 
 	return EX_OK;
 }
