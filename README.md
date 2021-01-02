@@ -2,6 +2,18 @@
 
 The I++ Compiler is a compiler developed for the programming language I++.
 
+## Table of Contents
+
+* [Summary](#Summary)
+* [The language](#The-language)
+* [Class diagram](#Class-diagram)
+* [Pre-requisites](#Pre-requisites)
+* [Compiling](#Compiling)
+* [Why Flex and Bison?](#Why-Flex-and-Bison)
+* [Why not use something more elegant for compiling the code?](#Why-not-use-something-more-elegant-for-compiling-the-code?)
+* [Known problems](#Known-problems)
+* [Next steps](#Next-steps)
+
 ## Summary
 
 [The original documentation in Portuguese can be found [in here](./docs/pt/README.md)]
